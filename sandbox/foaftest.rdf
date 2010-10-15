@@ -1,0 +1,49 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<owl:Ontology>
+   <owl:imports rdf:resource="http://www.w3.org/TR/owl-guide/wine.rdf"/>
+</owl:Ontology>
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:nodeID="me"/>
+  <foaf:primaryTopic rdf:nodeID="me"/>
+  <admin:generatorAgent 
+rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:nodeID="me">
+<foaf:name>Giovambattista Ianni</foaf:name>
+<foaf:givenname>Giovambattista</foaf:givenname>
+<foaf:family_name>Ianni</foaf:family_name>
+<foaf:homepage rdf:resource="http://www.gibbi.com"/>
+<foaf:depiction 
+rdf:resource="http://www.gibbi.com/L_GB2.jpg"/>
+<foaf:phone rdf:resource="tel:+39-0984-496430"/>
+<foaf:workplaceHomepage 
+rdf:resource="http://www.mat.unical.it/ianni"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Axel Polleres</foaf:name>
+<rdfs:seeAlso 
+rdf:resource="http://homepage.uibk.ac.at/~c703262/foaf.rdf"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Wolfgang Faber</foaf:name>
+<rdfs:seeAlso 
+rdf:resource="http://www.kr.tuwien.ac.at/staff/faber/foaf.rdf"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Francesco Calimeri</foaf:name>
+<rdfs:seeAlso 
+rdf:resource="http://www.mat.unical.it/kali/"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Roman Schindlauer</foaf:name>
+<rdfs:seeAlso 
+rdf:resource="http://www.kr.tuwien.ac.at/staff/roman/foaf.rdf"/></foaf:Person></foaf:knows>
+</foaf:Person>
+</rdf:RDF>

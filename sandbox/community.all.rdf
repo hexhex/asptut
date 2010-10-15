@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+     <!ENTITY vin  "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" >
+     <!ENTITY owl  "http://www.w3.org/2002/07/owl#" >
+     <!ENTITY xsd  "http://www.w3.org/2001/XMLSchema#" >
+     <!ENTITY foaf  "http://xmlns.com/foaf/0.1/" >
+     <!ENTITY ical  "http://www.w3.org/2002/12/cal/ical#" >
+     <!ENTITY base  "http://con.fusion.at/asptut/sandbox/test_foaf.gibbi.rdf#" >
+   ]>
+
+
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:owl="http://www.w3.org/2002/07/owl#"
+      xmlns:foafplus="http://www.example.org/"
+      xmlns:ical="http://www.w3.org/2002/12/cal/ical#"
+      xmlns:wine="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" >
+
+<owl:Ontology>
+   <owl:imports rdf:resource="http://www.w3.org/TR/owl-guide/wine.rdf"/>
+</owl:Ontology>
+
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent 
+rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Giovambattista Ianni</foaf:name>
+<foaf:givenname>Giovambattista</foaf:givenname>
+<foaf:family_name>Ianni</foaf:family_name>
+<foaf:homepage rdf:resource="http://www.gibbi.com"/>
+<foaf:depiction 
+rdf:resource="http://www.gibbi.com/L_GB2.jpg"/>
+<foaf:phone rdf:resource="tel:+39-0984-496430"/>
+<foafplus:winePreference rdf:resource="&vin;FrenchWine"/>
+                <foafplus:calendar>
+                   <ical:Vcalendar rdf:about="http://con.fusion.at/asptut/sandbox/calendar.gibbi.rdf"/>
+                </foafplus:calendar>
+<foafplus:worksfor>
+<foaf:Person>
+<rdfs:seeAlso rdf:resource="http://con.fusion.at/asptut/sandbox/test_foaf.thomas.rdf"/>
+</foaf:Person>
+</foafplus:worksfor>
+ 
+
+
+<foaf:workplaceHomepage 
+rdf:resource="http://www.mat.unical.it/ianni"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Axel Polleres</foaf:name>
+<rdfs:seeAlso 
+rdf:resource="http://con.fusion.at/asptut/sandbox/test_foaf.axel.rdf"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Francesco Calimeri</foaf:name>
+<rdfs:seeAlso 
+rdf:resource="http://con.fusion.at/asptut/sandbox/test_foaf.kali.rdf"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Roman Schindlauer</foaf:name>
+<rdfs:seeAlso 
+rdf:resource="http://con.fusion.at/asptut/sandbox/test_foaf.roman.rdf"/></foaf:Person></foaf:knows>
+
+</foaf:Person>
+</rdf:RDF>

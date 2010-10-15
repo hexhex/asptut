@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+     <!ENTITY vin  "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" >
+     <!ENTITY owl  "http://www.w3.org/2002/07/owl#" >
+     <!ENTITY xsd  "http://www.w3.org/2001/XMLSchema#" >
+     <!ENTITY foaf  "http://xmlns.com/foaf/0.1/" >
+     <!ENTITY ical  "http://www.w3.org/2002/12/cal/ical#" >
+   ]>
+
+
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:owl="http://www.w3.org/2002/07/owl#"
+      xmlns:foafplus="http://www.example.org/"
+      xmlns:ical="http://www.w3.org/2002/12/cal/ical#"
+      xmlns:wine="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#">
+
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent 
+rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Thomas Eiter</foaf:name>
+<foaf:title>Prof.</foaf:title>
+<foaf:givenname>Thomas</foaf:givenname>
+<foaf:family_name>Eiter</foaf:family_name>
+<foaf:mbox_sha1sum>f0758dd5ba72906f9f5b2ee040211578590965eb</foaf:mbox_sha1sum>
+
+               <foafplus:calendar>
+                   <ical:Vcalendar rdf:about="http://con.fusion.at/asptut/sandbox/calendar.thomas.rdf"/>
+                </foafplus:calendar>
+	
+<foaf:homepage 
+rdf:resource="http://www.kr.tuwien.ac.at/staff/eiter"/>
+<foaf:depiction 
+rdf:resource="http://www.kr.tuwien.ac.at/staff/eiter/eiter.GIF"/>
+<foaf:phone rdf:resource="tel:+43-1-58801-18460"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Gibbi</foaf:name>
+<foaf:mbox_sha1sum>9a58adb5d009fa1df71a725afbd3d9cccb97f895</foaf:mbox_sha1sum>
+<rdfs:seeAlso 
+rdf:resource="http://con.fusion.at/asptut/sandbox/test_foaf.gibbi.rdf"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Axel</foaf:name>
+<foaf:mbox_sha1sum>35a8d4858ba240996a6f71836d93fbfdcd2b4843</foaf:mbox_sha1sum>
+<rdfs:seeAlso 
+rdf:resource="http://con.fusion.at/asptut/sandbox/test_foaf.axel.rdf"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Roman</foaf:name>
+<foaf:mbox_sha1sum>2ede6b8f84698dd16ac1cb4495d5c2c12beff3cd</foaf:mbox_sha1sum>
+<rdfs:seeAlso 
+rdf:resource="http://con.fusion.at/asptut/sandbox/test_foaf.roman.rdf"/></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>
+

@@ -1,0 +1,4 @@
+%solver=dlv
+%filter=a
+a(c).
+

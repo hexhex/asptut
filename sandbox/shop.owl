@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF []>
+<rdf:RDF
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns="http://shop#"
+  xml:base="http://shop">
+
+  <owl:Ontology rdf:ID="shop"/>
+
+  <owl:Class rdf:ID="Shop"/>
+  <owl:Class rdf:ID="Part"/>
+
+  <owl:Class rdf:ID="Discount">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#supplier"/>
+        <owl:minCardinality rdf:datatype="xsd:nonNegativeInteger">2</owl:minCardinality>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="supplier">
+    <rdfs:domain rdf:resource="#Shop" />
+    <rdfs:range rdf:resource="#Part" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="provides">
+    <rdfs:domain rdf:resource="#Shop" />
+    <rdfs:range rdf:resource="#Part" />
+  </owl:ObjectProperty>
+
+  <Shop rdf:about="#s1">
+    <provides rdf:resource="#case" />
+    <provides rdf:resource="#cpu" />
+  </Shop>
+
+  <Shop rdf:about="#s2">
+    <provides rdf:resource="#soundcard" />
+  </Shop>
+
+  <Shop rdf:about="#s3">
+    <provides rdf:resource="#memory" />
+    <provides rdf:resource="#cpu" />
+    <provides rdf:resource="#dvdrom" />
+  </Shop>
+
+  <Shop rdf:about="#s4">
+    <provides rdf:resource="#harddisk" />
+    <provides rdf:resource="#cdrom" />
+  </Shop>
+
+
+  <Part rdf:ID="cpu" />
+  <Part rdf:ID="case" />
+  <Part rdf:ID="harddisk" />
+  <Part rdf:ID="memory" />
+  <Part rdf:ID="fan" />
+  <Part rdf:ID="cdrom" />
+  <Part rdf:ID="dvdrom" />
+  <Part rdf:ID="soundcard" />
+  <Part rdf:ID="wlan" />
+  <Part rdf:ID="graphiccard" />
+
+</rdf:RDF>
+

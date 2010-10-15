@@ -1,0 +1,117 @@
+<rdf:RDF
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  xmlns='http://www.w3.org/2002/12/cal/ical#'
+  xmlns:i='http://www.w3.org/2002/12/cal/ical#'
+  xmlns:x='http://www.w3.org/2002/12/cal/prod/Google_Inc_4ed21034d44ff76e#'
+><Vcalendar>
+    <prodid>-//Google Inc//Google Calendar 70.9054//EN</prodid>
+    <version>2.0</version>
+    <calscale>GREGORIAN</calscale>
+    <method>PUBLISH</method>
+  <component>
+   <Vevent>
+    <dtstart rdf:parseType='Resource'>
+     <dateTime>2006-06-13T11:30:00</dateTime>
+     <tzid>Europe/Paris</tzid>
+    </dtstart>
+    <dtend rdf:parseType='Resource'>
+     <dateTime>2006-06-13T17:00:00</dateTime>
+     <tzid>Europe/Paris</tzid>
+    </dtend>
+    <dtstamp rdf:parseType='Resource'>
+     <dateTime>2006-05-03T13:15:17Z</dateTime>
+    </dtstamp>
+    <organizer rdf:parseType='Resource'>
+     <calAddress rdf:resource='mailto:q2dimk8k766sd4g5k8q0fn3pl8@group.calendar.google.com'/>
+     <cn>T. Eiter</cn>
+    </organizer>
+    <uid>pvemcpv440elct303rp1rpc5bo@google.com</uid>
+    <attendee rdf:parseType='Resource'>
+     <calAddress rdf:resource='mailto:q2dimk8k766sd4g5k8q0fn3pl8@group.calendar.google.com'/>
+     <partstat rdf:resource='http://www.w3.org/2002/12/cal/ical#organizer'/>
+     <cn>T. Eiter</cn>
+     <xNumGuests>0</xNumGuests>
+     <cutype rdf:resource='http://www.w3.org/2002/12/cal/ical#group'/>
+     <role rdf:resource='http://www.w3.org/2002/12/cal/ical#reqParticipant'/>
+    </attendee>
+    <class rdf:resource='http://www.w3.org/2002/12/cal/ical#private'/>
+    <created rdf:parseType='Resource'>
+     <dateTime>2006-05-03T13:03:34Z</dateTime>
+    </created>
+    <lastModified rdf:parseType='Resource'>
+     <dateTime>2006-05-03T13:04:59Z</dateTime>
+    </lastModified>
+    <sequence>1</sequence>
+    <status>CONFIRMED</status>
+    <summary>Brainstorming</summary>
+    <transp rdf:resource='http://www.w3.org/2002/12/cal/ical#opaque'/>
+   </Vevent>
+  </component>
+  <component>
+   <Vevent>
+    <dtstart rdf:parseType='Resource'>
+     <dateTime>2006-06-11T09:00:00</dateTime>
+     <tzid>Europe/Paris</tzid>
+    </dtstart>
+    <dtend rdf:parseType='Resource'>
+     <dateTime>2006-06-11T17:00:00</dateTime>
+     <tzid>Europe/Paris</tzid>
+    </dtend>
+    <dtstamp rdf:parseType='Resource'>
+     <dateTime>2006-05-03T13:15:17Z</dateTime>
+    </dtstamp>
+    <organizer rdf:parseType='Resource'>
+     <calAddress rdf:resource='mailto:q2dimk8k766sd4g5k8q0fn3pl8@group.calendar.google.com'/>
+     <cn>T. Eiter</cn>
+    </organizer>
+    <uid>lkjhp2v2vj9aihdi7tee4ntiko@google.com</uid>
+    <class rdf:resource='http://www.w3.org/2002/12/cal/ical#private'/>
+    <created rdf:parseType='Resource'>
+     <dateTime>2006-05-02T17:29:05Z</dateTime>
+    </created>
+    <lastModified rdf:parseType='Resource'>
+     <dateTime>2006-05-02T17:29:09Z</dateTime>
+    </lastModified>
+    <location>ESWC 2006</location>
+    <sequence>2</sequence>
+    <status>CONFIRMED</status>
+    <summary>Tutorial at ESWC 2006</summary>
+    <transp rdf:resource='http://www.w3.org/2002/12/cal/ical#opaque'/>
+   </Vevent>
+  </component>
+  <component>
+   <Vtimezone>
+    <tzid>Europe/Paris</tzid>
+    <x:licLocation>Europe/Paris</x:licLocation>
+  <daylight rdf:parseType='Resource'>
+    <tzoffsetfrom>+0100</tzoffsetfrom>
+    <tzoffsetto>+0200</tzoffsetto>
+    <tzname>CEST</tzname>
+    <dtstart rdf:parseType='Resource'>
+     <dateTime>1970-03-29T02:00:00</dateTime>
+    </dtstart>
+    <rrule rdf:parseType='Resource'>
+     <bymonth>3</bymonth>
+     <freq>YEARLY</freq>
+     <interval>1</interval>
+     <byday>-1SU</byday>
+    </rrule>
+   </daylight>
+  <standard rdf:parseType='Resource'>
+    <tzoffsetfrom>+0200</tzoffsetfrom>
+    <tzoffsetto>+0100</tzoffsetto>
+    <tzname>CET</tzname>
+    <dtstart rdf:parseType='Resource'>
+     <dateTime>1970-10-25T03:00:00</dateTime>
+    </dtstart>
+    <rrule rdf:parseType='Resource'>
+     <bymonth>10</bymonth>
+     <freq>YEARLY</freq>
+     <interval>1</interval>
+     <byday>-1SU</byday>
+    </rrule>
+   </standard>
+   </Vtimezone>
+  </component>
+   </Vcalendar>
+</rdf:RDF>
